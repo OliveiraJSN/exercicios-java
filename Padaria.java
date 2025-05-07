@@ -24,8 +24,12 @@ class Padaria{
         
     }
 
+    public double get_preco_por_kilo(){
+        return this.preco_por_kilo;
+    }
+
     public String get_nome(){
-        
+        return this.nome;
     }
 }
-}
+
