@@ -14,7 +14,10 @@ class Acougue{
     }
 
     public String[] get_animal_corte(){
-        
+        String auxiliar[] = new String[3];
+        auxiliar[0] = this.frigorifico;
+        auxiliar[1] = this.animal;
+        auxiliar[2] = this.corte;
     }
 
 

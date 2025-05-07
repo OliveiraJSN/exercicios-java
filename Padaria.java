@@ -3,11 +3,21 @@ class Padaria{
     private double preco_por_kilo;
 
     public Padaria(String nome, double preco_por_kilo, Data validade){
-
+        this.nome = nome;
+        if(preco_por_kilo > 0){
+            this.preco_por_kilo = preco_por_kilo;
+        } else{
+            this.preco_por_kilo = 1;
+        }
+        this.validade = validade;
     }
 
     public void set_preco_por_kilo(double preco_por_kilo){
-
+        if(preco_por_kilo > 0){
+            this.preco_por_kilo = preco_por_kilo;
+            return;
+        }
+        System.out.println("O valor precisa ser maior que 0!");
     }
 
     public double calcula_lucro(){

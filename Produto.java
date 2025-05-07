@@ -7,7 +7,7 @@ class Produto(){
 
     public Produto(Data validade, double peso, String codigo_de_barra){
         this.validade = validade;
-        (if peso > 0){
+        if (peso > 0){
         this.peso = peso;
         } else {
             this.peso = 0;
