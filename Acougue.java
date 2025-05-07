@@ -4,7 +4,9 @@ class Acougue{
     private String corte;
 
     public Acougue(String frigorifico, String animal, String corte){
-
+        this.frigorifico = frigorifico;
+        this.animal = animal;
+        this.corte = corte;
     }
 
     public double calcula_lucro(){
@@ -15,5 +17,5 @@ class Acougue{
         
     }
 
-    
+
 }
