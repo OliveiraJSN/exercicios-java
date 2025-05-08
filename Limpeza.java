@@ -1,4 +1,4 @@
-class Limpeza{
+class Limpeza extends Produto{
     private String nome;
     private String marca;
     private int quantidade;
@@ -18,6 +18,7 @@ class Limpeza{
         String auxiliar[] = new String[2];
         auxiliar[0] = this.nome;
         auxiliar[1] = this.marca;
+        return auxiliar;
     }
 
     public int get_quantidade(){

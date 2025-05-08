@@ -1,4 +1,4 @@
-class Padaria{
+class Padaria extends Produto{
     private String nome;
     private double preco_por_kilo;
 

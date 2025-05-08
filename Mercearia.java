@@ -1,4 +1,4 @@
-class Mercearia{
+class Mercearia extends Produto{
     private String nome;
     private String marca;
     private int quantidade;
@@ -25,6 +25,7 @@ class Mercearia{
         String auxiliar[] = new String[2];
         auxiliar[0] = this.nome;
         auxiliar[1] = this.marca;
+        return auxiliar;
     }
 
     public int get_quantidade(){
