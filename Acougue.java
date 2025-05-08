@@ -11,7 +11,7 @@ class Acougue extends Produto{
     }
 
     public double calcula_lucro(){
-
+        return (this.preco_final - this.preco_compra) * this.peso;
     }
 
     public String[] get_animal_corte(){

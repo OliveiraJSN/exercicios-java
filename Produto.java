@@ -1,4 +1,4 @@
-class Produto(){
+public class Produto{
     protected double preco_compra;
     protected double preco_final;
     protected Data validade;
@@ -11,7 +11,7 @@ class Produto(){
         this.peso = peso;
         } else {
             this.peso = 0;
-            System.out.println("Peso não pode ser menor que 0!")
+            System.out.println("Peso não pode ser menor que 0!");
         }
         this.codigo_de_barra = codigo_de_barra;
         this.preco_final = 9999999.99;

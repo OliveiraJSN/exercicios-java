@@ -22,7 +22,7 @@ class Padaria extends Produto{
     }
 
     public double calcula_lucro(){
-        
+        return (this.preco_final - this.preco_compra) * this.preco_por_kilo;
     }
 
     public double get_preco_por_kilo(){

@@ -19,7 +19,7 @@ class Mercearia extends Produto{
     }
 
     public double calcula_lucro(){
-
+        return (this.preco_final - this.preco_compra) * this.quantidade;
     }
 
     public String[] get_mercearia_String(){
