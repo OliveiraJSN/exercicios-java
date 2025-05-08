@@ -2,7 +2,8 @@ class Padaria extends Produto{
     private String nome;
     private double preco_por_kilo;
 
-    public Padaria(String nome, double preco_por_kilo, Data validade){
+    public Padaria(String nome, double preco_por_kilo, Data validade, double peso, String codigo_de_barra){
+        super(validade, peso, codigo_de_barra);
         this.nome = nome;
         if(preco_por_kilo > 0){
             this.preco_por_kilo = preco_por_kilo;

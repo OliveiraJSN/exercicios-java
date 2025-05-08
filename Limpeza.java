@@ -3,7 +3,8 @@ class Limpeza extends Produto{
     private String marca;
     private int quantidade;
 
-    public Limpeza(String nome, String marca, int quantidade){
+    public Limpeza(String nome, String marca, int quantidade, Data validade, double peso, String codigo_de_barra){
+        super(validade, peso, codigo_de_barra);
         this.nome = nome;
         this.marca = marca;
         if(quantidade > 0){

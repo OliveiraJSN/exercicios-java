@@ -3,7 +3,8 @@ class Mercearia extends Produto{
     private String marca;
     private int quantidade;
 
-    pulblic Mercearia(String nome, String marca){
+    public Mercearia(String nome, String marca, Data validade, double peso, String codigo_de_barra){
+        super(validade, peso, codigo_de_barra);
         this.nome = nome;
         this.marca = marca;
         this.quantidade = 0;
